@@ -1,0 +1,470 @@
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Niconne&family=Open+Sans&family=Roboto+Condensed:wght@400&family=Roboto:wght@900&family=Source+Serif+4&display=swap');
+
+/* Box Model Hack */
+* {
+  box-sizing: border-box;
+}
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+	clear: both;
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+*:hover{
+  /* outline: 1px red solid; */
+}
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+li{
+  list-style: none;
+}
+
+a{
+  text-decoration: none;
+}
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+header {
+  background: url('/images/section1.jpg') no-repeat right;
+  background-size: cover;
+  height: fit-content;
+  position: relative;
+}
+
+.header-section{
+  
+  padding-left: 5%;
+  
+  padding-bottom: 20px;
+  background: linear-gradient(90deg, #dee9ed, rgba(255, 255, 255, 0));
+  width: 50%;
+  margin-top: 0;
+}
+
+.nav{
+  display:flex;
+  align-items: center;
+  /* justify-content: right; */
+  background: rgba(243, 249, 249, 0.658);
+  padding: 12px 50px;
+  margin: 0;
+}
+
+.logo{
+  margin-right: auto;
+  font-family: 'Kaushan Script', cursive;
+ 
+}
+
+.logo h3{
+  padding: 0;
+  margin: 0;
+}
+.nav-list{
+  display: flex;
+  width: auto;
+  padding: o;
+  margin: 0 15px 0 0;
+}
+
+.nav-list li a{
+  font-size: 12px;
+  color: black;
+  margin: 0 10px;
+  font-family: 'Kaushan Script';
+}
+
+.icon{
+  width: 16px;
+  height: 16px;
+  margin: 0 25px 0 0;
+  padding: 0;
+}
+
+.icon img{
+  margin: 0;
+}
+
+.header h1{
+  font-family: 'Kaushan Script', cursive;
+  font-size: 60px;
+  width: 50%;
+}
+
+.header form{
+  display: flex;
+  width: 100%;
+}
+
+.header form input{
+  font-family: 'Roboto';
+  float: left;
+  width: 60%;
+  height: 40px;
+  font-size: 10px;
+  text-indent: 15%;
+  border: 2px solid rgb(209, 205, 205);
+  border-radius: 5px 0 0 5px;
+  background: url('../images/search.svg') no-repeat ;
+  background-position: 5% 50%;
+  background-size: 10%;
+}
+
+.header form input:focus{
+  background: none;
+  text-indent: 0;
+}
+
+.header form button{
+  border: none;
+  border-radius: 0 3px 3px 0;
+  background: #ff8800;
+  color: white;
+  font-size: 12px;
+  float: left;
+  width: 40%;
+  font-family: 'Roboto';
+}
+
+.header form button:hover{
+  color: #ff8800;
+  background: white;
+}
+
+
+.header form input{
+  width: auto;
+}
+
+.socials{
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin: 20px 0;
+  
+}
+
+.facebook, .twitter, .instagram{
+  display: flex;
+  font-size: 10px;
+  align-items: center;
+  gap: 5px;
+  
+  filter: invert(21%) sepia(100%) saturate(3618%) hue-rotate(40deg) brightness(96%) contrast(108%);
+  
+}
+
+.facebook span, .twitter span, .instagram span{
+  font-family: 'Roboto';
+}
+
+/*********************ABOUT US********************/
+
+.about-us{
+  background: url(/images/section2.jpg) no-repeat;
+  display: flex;
+  justify-content: center;
+  background-size: cover;
+  
+}
+.about-us-color{
+  background: linear-gradient(90deg,  rgba(255, 255, 255, -0.685), #dee9ed 80%,  rgba(255, 255, 255, -0.685));
+  width: 70%;
+  padding: 10% 0 10% 20%;
+}
+
+.about-us-title{
+  color: #ff8800;
+  font-size: 12px;
+}
+
+.about-us h1{
+  font-family: 'Kaushan Script', cursive;
+  font-size: 50px;
+  margin: 0;
+}
+
+.about-us p{
+  font-size: 12px;
+  text-align: justify;
+  font-family: 'Roboto Condensed';
+   
+}
+
+.about-us button{
+  font-size: 12px;
+  background: #ff8800;
+  height: 30px;
+  padding: 10px;
+  text-align: center;
+  border-radius: 3px;
+  border: none;
+  color: #dee9ed;
+  font-family: 'Roboto';
+}
+
+/**************************ORDER NOW***********************/
+.order-now{
+  background: #f2f6f7;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 5%;
+}
+
+.order-now-title{
+  color: #ff8800;
+  font-size: 12px;
+}
+
+.order-now h1{
+  font-family: 'Kaushan Script', cursive;
+  font-size: 50px;
+  margin: 0;
+}
+
+.order-now-list{
+  display: flex;
+  align-items: center;
+  padding: 0;
+}
+
+.order-now-list li{
+  padding: 0 15px 10px ;
+  border-bottom: rgb(196, 196, 196) 0.5px solid; */
+  
+}
+
+.highlight{
+  border-top: #ff8800 2px solid;
+  z-index: 10;
+}
+
+.order-now-list a{
+  color: black;
+  font-size: 12px;
+}
+
+.stars{
+  display: flex;
+  align-items: center;
+}
+
+.stars img{
+  width: 15px;
+}
+
+.menu-cards{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+
+}
+
+.card1{
+  background: url('/images/menu1.jpg');
+  width: 20%;
+}
+.card2{
+  background: url('/images/menu2.jpg');
+  width: 20%;
+}
+.card3{
+  background: url('/images/menu3.jpg');
+  width: 20%;
+}
+.card4{
+  background: url('/images/menu4.jpg');
+  width: 20%;
+}
+.card5{
+  background: url('/images/menu1.jpg');
+  width: 20%;
+}
+.card6{
+  background: url('/images/menu2.jpg');
+  width: 20%;
+}
+.card7{
+  background: url('/images/menu3.jpg');
+  width: 20%;
+}
+.card8{
+  background: url('/images/menu4.jpg');
+  width: 20%;
+}
+
+.card{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px 0;
+  color: white;
+  background: rgba(0, 0, 0, 0.473);
+
+}
+
+.card span{
+  background: #ff8800;
+  padding: 3px;
+  font-size: 10px;
+  width: 30px;
+  align-self: right;
+}
+
+.card h2{
+  font-size: 12px;
+}
+
+.card button{
+  font-size: 12px;
+  background: #ff8800;
+  height: 30px;
+  padding: 10px;
+  text-align: center;
+  border-radius: 3px;
+  border: none;
+  color: #dee9ed;
+  font-family: 'Roboto';
+}
+
+/*********************BOOK TABLE***************************/
+.book-table{
+  background: url('/images/section3.jpg'), url('/images/section2.jpg');
+  background-position: left, right;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 30% 5%;
+  margin: 0;
+}
+
+.details{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+ padding: 0 10% 10%;
+  /* border: 2px solid red; */
+}
+
+.carousel{
+  display: block;
+  
+}
+
+.details h1{
+  font-family: 'Kaushan Script', cursive;
+  font-size: 50px;
+  margin-top: 0;
+}
+
+.details span{
+  font-family: 'Roboto';
+  color: #ff8800;
+  font-size: 12px;
+}
+
+.phone-button{
+  filter: invert(21%) sepia(100%) saturate(3618%) hue-rotate(40deg) brightness(96%) contrast(108%);
+  width: 25px;
+  margin-bottom: 10px;
+}
+
+.details h2{
+  font-size: 16px;
+  background: #ff8800;
+  padding: 10px;
+  font-family: 'Roboto';
+  color: #dee9ed;
+  border-radius: 4px;
+  border: none;
+}
+
+.details h3{
+  font-family: 'Roboto';
+  font-size: 12px;
+}
+
+.call-details{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.call-details img{
+  transform: translate(50%);
+}
+
+.times{
+  display: flex;
+  flex-direction: row;
+  gap: 50px;
+}
+
+.testimonials{
+  background: #dee9ed;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+
+.testimonials p{
+  text-align: center;
+  padding: 0 20%;
+}
+
+.testimonials h1{
+  font-family: 'Kaushan Script', cursive;
+  font-size: 40px;
+  margin-top: 0;
+}
+
+.testimonials h2{
+  margin: 0;
+  font-size: 20px;
+  font-family: 'Niconne';
+}
+
+.avatar{
+  clip-path: circle(50% at 50% 50%);
+}
+
+.testimonials :is(span, p){
+  font-family: 'Roboto';
+  font-size: 12px;
+  color: rgb(80, 75, 75);
+}
+
+/* body{
+  overflow-y: hidden;
+} */
+.carousel{
+  scroll-snap-type: mandatory;
+  -webkit-overflow-scrolling: touch;
+  display: flex;
+  overflow-x: scroll;
+}
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
